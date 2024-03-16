@@ -1,0 +1,64 @@
+/* @import reference from the Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+/* :root Selector with CSS Variables */
+:root {
+  --primary-color: #78E2DF; /* Tianny Bleu */
+  --secondary-color: #FFFFFF; /* White */
+  --accent1-color: #6DA84D; /* Asparagus */
+  --accent2-color: #FAA40F; /* Orange(web) */
+  --heading-font: 'Square Peg', sans-serif; /* Replace 'Square Peg' with your font choice */
+  --paragraph-font: 'Madimi One', sans-serif; /* Replace 'Madimi One' with your font choice */
+  --nav-background-color: #000000; /* Example color for navigation background */
+  --nav-link-color: #FFFFFF; /* Example color for navigation links */
+  --nav-hover-link-color: #CCCCCC; /* Example color for navigation links on hover */
+  --nav-hover-background-color: #333333; /* Example background color for navigation links on hover */
+}
+
+/* Body Rule */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+
+/* Headings Grouped */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Header Rule */
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+/* Paragraph Rule */
+p {
+  padding: 25px;
+}
+
+/* Nav Rules */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
