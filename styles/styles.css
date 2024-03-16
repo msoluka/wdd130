@@ -15,7 +15,7 @@ img {
     height: auto;
     border: 1px solid steelblue;
     padding: 2xp;
-    box-sizing: 0 0 30px gray;
+    box-sizing: border-box;
 }
 p {
     padding: 0;}
