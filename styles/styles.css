@@ -1,3 +1,4 @@
+/* Universal Selector */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@
 /* Class Selectors */
 /* You will be putting your class selector rules in this section. */
 
+/* Add the box class selector */
 .box {
   margin: 1rem;
   padding: 1rem;
@@ -16,6 +18,7 @@
   color: #000;
 }
 
+/* Adjusted aside rule example */
 aside {
   width: 20rem;
   margin: 1rem;
@@ -26,16 +29,19 @@ aside {
   text-align: center;
 }
 
+/* Float profile image */
 main img {
   float: right;
 }
 
+/* Overlay state/country heading */
 aside h2 {
   position: absolute;
   top: 10px;
   left: 10px;
 }
 
+/* Adjust nav styling */
 nav {
   background-color: steelblue;
   padding: 10px;
@@ -46,10 +52,12 @@ nav a {
   padding: 20px;
 }
 
+/* Adjust h1 styling */
 h1 {
   color: steelblue;
 }
 
+/* Adjust img styling */
 img {
   width: 150px;
   height: auto;
@@ -58,10 +66,12 @@ img {
   box-sizing: border-box;
 }
 
+/* Adjust p styling */
 p {
   padding: 0;
 }
 
+/* Adjust main styling */
 main {
   max-width: 840px;
 }
