@@ -12,11 +12,18 @@
   color: #000;
 }
 
-main img {
-  float: right;
+/* Ensure no embedded or inline styles */
+/* No Embedded/Inline Styles */
+/* Remove any embedded or inline styles */
+
+/* Ensure footer selector has required properties */
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
 }
 
-/* Removed position: relative from aside selector */
+/* Adjusted aside rule example */
 aside {
   width: 20rem;
   margin: 1rem;
@@ -25,11 +32,16 @@ aside {
   background-color: #eee;
   color: #333;
   text-align: center;
+  /* Remove position: relative; */
 }
 
-/* Ensure footer selector has required properties */
-footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
+/* Ensure proper positioning for aside h2 */
+aside h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
+
+/* Ensure no embedded or inline styles */
+/* No Embedded/Inline Styles */
+/* Remove any embedded or inline styles */
