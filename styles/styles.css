@@ -7,11 +7,18 @@
 /* Class Selectors */
 .box {
   margin: 1rem;
+  border: 1px solid rgba(0,0,0,0.1);
   padding: 1rem;
   background-color: #ddd;
   color: #000;
 }
+main img {
+  float: right;
+}
 
+aside {
+  position: relative;
+}
 /* Ensure no embedded or inline styles */
 /* No Embedded/Inline Styles */
 /* Remove any embedded or inline styles */
