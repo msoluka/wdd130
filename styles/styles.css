@@ -4,14 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Class Selectors */
-.box {
-  margin: 1rem;
-  border: 1px solid rgba(0,0,0,0.1);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
-}
+
 main img {
   float: right;
 }
@@ -30,23 +23,13 @@ footer {
   text-align: center;
 }
 
-/* Adjusted aside rule example */
-aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
-  /* Remove position: relative; */
-}
+
 
 /* Ensure proper positioning for aside h2 */
 aside h2 {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
 }
 
 /* Ensure no embedded or inline styles */
