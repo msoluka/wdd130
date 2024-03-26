@@ -1,0 +1,88 @@
+/* Rafting Site CSS Styles */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sedgwick+Ave+Display&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #78E2DF; /* Tianny Bleu */
+  --secondary-color: #FFFFFF; /* White */
+  --accent1-color: #6DA84D; /* Asparagus */
+  --accent2-color: #FAA40F; /* Orange(web) */
+  --heading-font: 'PT Serif', serif; /* Primary font for headings */
+  --paragraph-font: 'Sedgwick Ave Display', cursive; /* Secondary font for paragraphs */
+}
+
+/* Typography Styles */
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  /* Add other typography styles */
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--secondary-color);
+  /* Add other typography styles */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--accent1-color);
+  /* Add styles for navigation */
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  /* Add styles for navigation links */
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  /* Add styles for footer */
+}
+
+/* Social Media Icon Styles */
+.nav-social a {
+  text-decoration: none; /* Remove underlines */
+  /* Add styles for social media icons */
+}
+
+/* Hero Container Styles */
+.hero {
+  position: relative;
+  /* Add styles for hero container */
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Add styles for hero image */
+}
+
+/* Article Styles */
+article {
+  background-color: rgba(255, 255, 255, 0.8); /* Off-white background */
+  padding: 20px;
+  margin-top: 20px;
+  /* Add styles for article */
+}
+
+article img {
+  float: right;
+  margin-left: 20px;
+  /* Add styles for images within article */
+}
+
+/* Section Styles */
+section {
+  margin-top: 40px;
+  /* Add styles for section */
+}
+
+/* Additional Styles */
+/* Add any other styles needed */
