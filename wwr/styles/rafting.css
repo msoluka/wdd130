@@ -1,4 +1,4 @@
-/* Rafting Site CSS Styles */
+/* rafting.css */
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sedgwick+Ave+Display&display=swap');
@@ -13,23 +13,21 @@
   --paragraph-font: 'Sedgwick Ave Display', cursive; 
 }
 
-
-h1, h2, h3 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  
+/* Header */
+header.grid { /* Added class "grid" */
+  display: grid; /* Using CSS Grid */
+  grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes remaining space */
+  align-items: center; /* Align items vertically */
 }
 
-p {
-  font-family: var(--paragraph-font);
-  color: var(--secondary-color);
-
+header img {
+  max-width: 100%; /* Ensure logo fits within its container */
 }
 
 
 nav {
-  background-color: var(--accent1-color);
-
+  display: flex; /* Use Flexbox for navigation links */
+  justify-content: space-around; /* Distribute links evenly */
 }
 
 nav a {
@@ -38,50 +36,18 @@ nav a {
 
 }
 
-
+/* Footer */
 footer {
-  background-color: var(--accent2-color);
-  color: var(--secondary-color);
-
+  display: flex; /* Use Flexbox for social links */
+  justify-content: flex-end; /* Align social links to the right */
 }
 
-
-.nav-social a {
-  text-decoration: none;
-
+footer nav.sociallinks {
+  margin-right: 20px; /* Add some space between social links and footer text */
 }
 
-
-.hero {
-  position: relative;
-
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-  
-}
-
-
-article {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  margin-top: 20px;
-
-}
-
-article img {
-  float: right;
-  margin-left: 20px;
-
-}
-
-
-section {
-  margin-top: 40px;
-
+footer nav.sociallinks a {
+  margin-left: 10px; /* Add space between social icons */
 }
 
 
