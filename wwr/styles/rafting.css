@@ -16,7 +16,9 @@
   --heading-font: 'PT Serif', serif;
   --paragraph-font: 'Sedgwick Ave Display', cursive;
 }
-
+* {
+  box-sizing: border-box;
+}
 header,
 main,
 footer {
@@ -64,21 +66,33 @@ nav a:hover {
 
 /* Footer */
 footer {
-  display: flex;
-  /* Use Flexbox for social links */
-  justify-content: flex-end;
-  /* Align social links to the right */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  background: #3e3e3e;
+  color: #fff;
+  padding: 20px;
 }
 
 .sociallinks {
-  margin-right: 20px;
+  background: unset;
   /* Add some space between social links and footer text */
+  display: flex;
+  justify-content: space-around;
+  justify-self: end;
+  padding: 0;
+}
+
+.sociallinks img {
+  width: 50px;
 }
 
 .sociallinks a {
   margin-left: 10px;
   /* Add space between social icons */
   text-decoration: none;
+  padding: 0;
+  margin: 0 5px;
 }
 
 
@@ -108,7 +122,8 @@ footer {
 .hero article {
   background-color: rgba(255, 255, 255, .35);
   /*  It is easier to use transparency on the background color than using opacity on the entire element */
-      position: absolute;   /* This is the second absolute element inside the hero image element */
+  position: absolute;
+  /* This is the second absolute element inside the hero image element */
   top: 100px;
   /* How far from the top do you want this to display. Recommend using rem or px for the space */
   left: 50px;
