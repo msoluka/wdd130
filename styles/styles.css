@@ -1,4 +1,10 @@
-header, footer, .grid {
+* {
+  box-sizing: border-box;
+}
+
+header,
+footer,
+.grid {
   max-width: 840px;
   margin: 0 auto;
 }
@@ -21,8 +27,10 @@ nav a {
 }
 
 h1 {
-  border-bottom: 2px solid black; /* Added bottom border to h1 */
+  border-bottom: 2px solid black;
+  /* Added bottom border to h1 */
 }
+
 .grid {
   display: grid;
   align-items: center;
@@ -33,9 +41,26 @@ main {
   margin: 1rem;
 }
 
+main img {
+  width: 200px;
+}
+
 aside {
   width: 20rem;
   position: relative;
   grid-column: 1/2;
   grid-row: 1/2;
+  padding: 20px;
+}
+
+aside img {
+  width: 200px;
+}
+
+.box {
+  background-color: #c0bebe;
+}
+
+.box a {
+  color: #000;
 }
