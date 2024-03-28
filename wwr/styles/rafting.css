@@ -5,49 +5,133 @@
 
 /* Define CSS Variables */
 :root {
-  --primary-color: #78E2DF; /* Tianny Bleu */
-  --secondary-color: #FFFFFF; /* White */
-  --accent1-color: #6DA84D; /* Asparagus */
-  --accent2-color: #FAA40F; /* Orange(web) */
+  --primary-color: #78E2DF;
+  /* Tianny Bleu */
+  --secondary-color: #FFFFFF;
+  /* White */
+  --accent1-color: #6DA84D;
+  /* Asparagus */
+  --accent2-color: #FAA40F;
+  /* Orange(web) */
   --heading-font: 'PT Serif', serif;
-  --paragraph-font: 'Sedgwick Ave Display', cursive; 
+  --paragraph-font: 'Sedgwick Ave Display', cursive;
+}
+
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  ;
 }
 
 /* Header */
-header.grid { /* Added class "grid" */
-  display: grid; /* Using CSS Grid */
-  grid-template-columns: auto 1fr; /* Logo takes auto width, nav takes remaining space */
-  align-items: center; /* Align items vertically */
+.grid {
+  /* Added class "grid" */
+  display: grid;
+  /* Using CSS Grid */
+  grid-template-columns: 150px auto;
+  /* Logo takes auto width, nav takes remaining space */
+  align-items: center;
+  /* Align items vertically */
 }
 
 header img {
-  max-width: 100%; /* Ensure logo fits within its container */
+  max-width: 100%;
+  /* Ensure logo fits within its container */
 }
 
 
 nav {
-  display: flex; /* Use Flexbox for navigation links */
-  justify-content: space-around; /* Distribute links evenly */
+  display: flex;
+  /* Use Flexbox for navigation links */
+  justify-content: space-around;
+  /* Distribute links evenly */
+  background-color: var(--accent1-color);
+  padding: 2em 0;
 }
 
 nav a {
   color: var(--secondary-color);
   text-decoration: none;
+  padding: 1em;
+}
 
+nav a:hover {
+  color: var(--accent1-color);
+  background-color: var(--secondary-color);
 }
 
 /* Footer */
 footer {
-  display: flex; /* Use Flexbox for social links */
-  justify-content: flex-end; /* Align social links to the right */
+  display: flex;
+  /* Use Flexbox for social links */
+  justify-content: flex-end;
+  /* Align social links to the right */
 }
 
-footer nav.sociallinks {
-  margin-right: 20px; /* Add some space between social links and footer text */
+.sociallinks {
+  margin-right: 20px;
+  /* Add some space between social links and footer text */
 }
 
-footer nav.sociallinks a {
-  margin-left: 10px; /* Add space between social icons */
+.sociallinks a {
+  margin-left: 10px;
+  /* Add space between social icons */
+  text-decoration: none;
 }
 
 
+/* About Us hero */
+.hero {
+  /* This must be change from the default position to relative position for absolute to be held
+     withing the hero image container or it will default to the body */
+  position: relative;
+}
+
+.hero>img {
+  width: 100%;
+  /* Set the width of the hero image  */
+}
+
+.hero h1 {
+  position: absolute;
+  /* This is the first absolute position */
+  top: 30px;
+  /* How many pixels fro the top of the hero image do you wan this to be displayed */
+  width: 100%;
+  /* How wide do you want this to be. Remember that you may need to add a left & right margin if not full width to center this */
+  text-align: center;
+  color: #e3e3e3;
+}
+
+.hero article {
+  background-color: rgba(255, 255, 255, .35);
+  /*  It is easier to use transparency on the background color than using opacity on the entire element */
+      position: absolute;   /* This is the second absolute element inside the hero image element */
+  top: 100px;
+  /* How far from the top do you want this to display. Recommend using rem or px for the space */
+  left: 50px;
+  /* how far from the left edge do you want to start the element use px or rem */
+  right: 50px;
+  /* How far from the right edge do you want to stop?  Use ps or rem  */
+}
+
+.hero article img {
+  float: right;
+  /* This is the element that must be floated on the right side of the article */
+  margin: 25px;
+  /* How much of a margin do you want around the image>  Use rem, em or px */
+  width: 200px;
+  /* How wide do you want the image?  Use px, re,. em */
+}
+
+.hero article p {
+  color: #000;
+  /* Set the color of the text */
+  font-size: 18px;
+  /* What font size do you want the text? Use rem, em or px */
+  text-align: left;
+  /* How do you want the text to be aligned? Left is best. Do not center unless there is a small amount of text */
+  padding: 20px;
+}
