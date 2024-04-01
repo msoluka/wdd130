@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Lois Messie Soluka | WDD 130</title>
-    <meta name="description" content="This is the personal webpage of Lois Messie Soluka, created for the WDD 130 course.">
-    <meta name="author" content="Lois Messie Soluka"/>
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
-<header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="wwr/">Rafting site</a>
-        <a href="wwr/site-plan-rafting.html">Rafting Site Plan</a>
-        <!-- Added LinkedIn and Facebook links -->
+    <header>
+        <h1>HTML and CSS Quiz</h1>
+    </header>
+    
+    <main>
+        <form>
+            <div>
+                <label for="q1">Question 1: What does HTML stand for?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            
+            <div>
+                <label for="q2">Question 2: Briefly explain the purpose of CSS.</label>
+                <textarea id="q2" name="q2" rows="4" required></textarea>
+            </div>
+            
+            <div>
+                <label for="q3">Question 3: Select the correct CSS property for text color:</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose one...</option>
+                    <option value="color">Color</option>
+                    <option value="background-color">Background Color</option>
+                    <option value="font-family">Font Family</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="q4">Question 4: How many heading elements are available in HTML?</label>
+                <input type="number" id="q4" name="q4" min="1" max="6" required>
+            </div>
+            
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
 
-        <a href="https://www.linkedin.com/in/lo%C3%AFs-soluka-ab3a7a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
-        <a href="https://www.facebook.com/lois.sol.5?mibextid=ZbWKwL" target="_blank">Facebook</a>
-    </nav>
-</header>
-<div class="grid">
-<main>
-    <h1>Lois Messie Soluka | WDD 130</h1>
-    <img src="images/profile.png" alt="Hello, my name is Lois Messie Soluka" width="200">
-    <p>Hello! My name is Lois Messie Soluka and I am 23 years old, from Congo Kinshasa. I served a full time mission in Uganda kampala and rwanda kigali mission. I enjoyed my time as an lds missionary. I'm in a family of ten children and i'm the 8th, i have 5 brothers and 4 sisters. I'm a student at byu idaho doing web and computer programming. I enjoy reading books, talking with loved ones, listening to music, and outdoor activities.</p>
-    <ul class="box">
-        <li><a href="https://www.churchofjesuschrist.org/temples/details/kinshasa-democratic-republic-of-the-congo-temple?lang=eng" target="_blank">Kinshasa Democratic Republic of the Congo Temple</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng" target="_blank">Salt Lake Temple</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng" target="_blank">San Diego California Temple</a></li>
-    </ul>
-</main>
-<aside class="box">
-<h2>Kinshasa</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/La_ville_de_Kinshasa.jpg" alt="kinshasa landscape">
-    <p>Kinshasa is the capital of the Democratic Republic of Congo, is a bustling metropolis situated along the Congo River. It's known for its vibrant culture, lively music scene, and bustling markets. With a diverse population and a mix of modern skyscrapers and informal settlements, Kinshasa reflects the complexities of urban life in Africa.</p>
-</aside>
-<footer>
-    <p>©2024 🌴 Lois Messie Soluka 🌴 Congo, Kinshasa</p>
-</footer>
-<!--Last modified: March 15, 2024-->
-</div>
+    <footer>
+
+    </footer>
+
 </body>
 </html>
