@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rafting company</title>
+    <meta name="description"
+        content="Contact Rafting Company for inquiries, questions, and reservations. Explore our thrilling adventures and get in touch with us.">
+    <meta name="author" content="Lois Messie Soluka">
+
+    <!-- Link to the CSS stylesheet -->
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header class="grid"> <!-- Added class "grid" to use CSS Grid -->
+        <img src="images/Rapids_logo2.jpg" alt="Rafting Company Logo">
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+            <a class="current" href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+
+
+            <h2>Send Us a message</h2>
+
+                <p>123 Whitewater Way, Rapidsville, Congo Kinshasa</p>
+                <p>Phone: +243-900-374-11</p>
+                <p>Email: info@raftingcompany.com</p>
+                <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.6167466461907!2d15.545334773299427!3d-4.294397595679567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a4db29d1e72d3%3A0x69ad6af6fc1cc929!2sElysium%20Park%20%26%20Farm%20N%E2%80%99Sele!5e0!3m2!1sfr!2scd!4v1712177810856!5m2!1sfr!2scd" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </section>
+
+        <section>
+            <h2>Meet our Team</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>John Doe - CEO</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>Jane Smith - Operations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>Mike Johnson - Tour Guide</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="purpose">Purpose of Message:</label><br>
+                <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+                <label for="inquiry">General Inquiry</label><br>
+                <input type="radio" id="reservation" name="purpose" value="reservation" required>
+                <label for="reservation">Reservation Question</label><br>
+                <input type="radio" id="suggestion" name="purpose" value="suggestion" required>
+                <label for="suggestion">Website Suggestion</label><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>&copy;2024 Rafting Company. All rights reserved. Created by Lois Messie Soluka</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-256.webp" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
