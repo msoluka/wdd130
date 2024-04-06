@@ -23,7 +23,7 @@
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
-            <a class="current" href="contact.html">Contact Us</a>
+
         </nav>
     </header>
     <main>
@@ -68,13 +68,14 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
 
-                <label for="purpose">Purpose:</label><br>
-                <input type="radio" id="General" name="purpose" value="General inquiry" checked>
-                <label for="general">General Inquiry</label><br>
-                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                <label for="reservation">Reservation Question</label><br>
-                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                <label for="suggestion">Website Suggestion</label><br><br>
+                <fleldset>
+                    <legend>Purpose</legend>
+                    <input type="radio" id="General" name="purpose" value="General inquiry" checked>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <fieldset>
 
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
