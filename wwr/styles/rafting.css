@@ -150,3 +150,6 @@ footer {
   /* How do you want the text to be aligned? Left is best. Do not center unless there is a small amount of text */
   padding: 20px;
 }
+.oogle-map{
+  border: 0;
+}
