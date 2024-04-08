@@ -131,22 +131,3 @@ footer {
 .oogle-map{
   border: 0;
 }
-
-/* Adjustments */
-
-section figure {
-  max-width: 200px; /* or any desired width */
-  margin: 0 auto; /* centers the images */
-  display: inline-block; /* ensures they are on the same row */
-}
-
-section form {
-  max-width: 400px; /* or any desired width */
-  margin-bottom: 20px; /* adds margin at the bottom */
-}
-
-section form {
-  display: flex;
-  flex-direction: column;
-  /* or use display: grid for grid layout */
-}
