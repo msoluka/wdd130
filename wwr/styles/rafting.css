@@ -157,7 +157,7 @@ footer {
   border: 0;
 }
 
-/* Adjustments */
+
 
 section figure {
   max-width: 150px; /* or any desired width */
@@ -166,7 +166,7 @@ section figure {
 }
 
 section form {
-  max-width: 400px; /* or any desired width */
+  max-width: 250px; /* or any desired width */
   margin-bottom: 20px; /* adds margin at the bottom */
 }
 
