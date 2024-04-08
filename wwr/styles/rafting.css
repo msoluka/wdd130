@@ -24,7 +24,6 @@ main,
 footer {
   max-width: 1200px;
   margin: 0 auto;
-  ;
 }
 
 /* Header */
@@ -33,16 +32,13 @@ footer {
   display: grid;
   /* Using CSS Grid */
   grid-template-columns: 150px auto;
-
   align-items: center;
   /* Align items vertically */
 }
 
 header img {
   max-width: 100%;
-
 }
-
 
 nav {
   display: flex;
@@ -89,66 +85,68 @@ footer {
 
 .sociallinks a {
   margin-left: 10px;
-
   text-decoration: none;
   padding: 0;
   margin: 0 5px;
 }
 
-
 /* About Us hero */
 .hero {
-
   position: relative;
 }
 
 .hero>img {
   width: 100%;
-
 }
 
 .hero h1 {
   position: absolute;
-
   top: 30px;
-
   width: 100%;
-
   text-align: center;
   color: #e3e3e3;
 }
 
 .hero article {
   background-color: rgba(255, 255, 255, .35);
-
   position: absolute;
-
   top: 100px;
-
   left: 50px;
-
   right: 50px;
-
 }
 
 .hero article img {
   float: right;
-
   margin: 25px;
-
   width: 200px;
-
 }
 
 .hero article p {
   color: #000;
-
   font-size: 18px;
-
   text-align: left;
-  
   padding: 20px;
 }
+
 .oogle-map{
   border: 0;
+}
+
+/* Adjustments */
+
+section figure {
+  max-width: 200px; /* or any desired width */
+  margin: 0 auto; /* centers the images */
+  display: inline-block; /* ensures they are on the same row */
+}
+
+section form {
+  max-width: 400px; /* or any desired width */
+  margin-bottom: 20px; /* adds margin at the bottom */
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  /* or use display: grid for grid layout */
 }
