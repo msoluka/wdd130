@@ -160,7 +160,7 @@ footer {
 /* Adjustments */
 
 section figure {
-  max-width: 200px; /* or any desired width */
+  max-width: 150px; /* or any desired width */
   margin: 0 auto; /* centers the images */
   display: inline-block; /* ensures they are on the same row */
 }
