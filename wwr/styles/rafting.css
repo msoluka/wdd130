@@ -88,6 +88,7 @@ footer {
 }
 
 .sociallinks a {
+
   margin-left: 10px;
 
   text-decoration: none;
@@ -132,6 +133,7 @@ footer {
 }
 
 .hero article img {
+
   float: right;
 
   margin: 25px;
@@ -141,15 +143,35 @@ footer {
 }
 
 .hero article p {
+
   color: #000;
 
   font-size: 18px;
 
   text-align: left;
-  
+
   padding: 20px;
 }
 
 .oogle-map{
   border: 0;
+}
+
+/* Adjustments */
+
+section figure {
+  max-width: 200px; /* or any desired width */
+  margin: 0 auto; /* centers the images */
+  display: inline-block; /* ensures they are on the same row */
+}
+
+section form {
+  max-width: 400px; /* or any desired width */
+  margin-bottom: 20px; /* adds margin at the bottom */
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  /* or use display: grid for grid layout */
 }
