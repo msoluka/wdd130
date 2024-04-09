@@ -36,8 +36,8 @@
                 <p>123 Whitewater Way, Rapidsville, Congo Kinshasa</p>
                 <p>Phone: +243-900-374-11</p>
                 <p>Email: info@raftingcompany.com</p>
-                <div class="map">
-            <iframe 
+               
+            <iframe  class="map" 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.6167466461907!2d15.545334773299427!3d-4.294397595679567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a4db29d1e72d3%3A0x69ad6af6fc1cc929!2sElysium%20Park%20%26%20Farm%20N%E2%80%99Sele!5e0!3m2!1sfr!2scd!4v1712177810856!5m2!1sfr!2scd" 
                 width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -59,16 +59,16 @@
             </figure>
         </section>
 
-        <section>
+        <section class="contact-form">
             <h2>Send Us a Message</h2>
-            <form action="#" method="POST">
+            <form class="contact" action="#" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <fieldset>
+                <fieldset class="contact-purpose">
                     <legend>Purpose</legend>
                     <input type="radio" id="general" name="purpose" value="general inquiry" checked>
                     <label for="general">General inquiry</label>
@@ -76,15 +76,21 @@
                     <label for="reservation">Reservation question</label>
                     <label for="suggestion">Website suggestion</label>
                     <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website suggestion</label>
+                   
                 </fieldset>
+
+                <div class="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" cols="50" required></textarea>
 
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+               
 
-                <button type="submit">Submit</button>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
@@ -96,7 +102,7 @@
             <a href="https://facebook.com" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
             <a href="https://twitter.com" target="_blank"><img src="images/twitter-256.webp" alt="Twitter"></a>
             <a href="https://instagram.com" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
-            <a href="wireframe.html">wirefrsme</a>
+            <a href="images/contact.drawio.png">wirefrsme</a>
         </nav>
     </footer>
 
