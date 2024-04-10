@@ -5,54 +5,44 @@
 
 /* Define CSS Variables */
 :root {
-  --primary-color: #78E2DF;
-  /* Tianny Bleu */
-  --secondary-color: #FFFFFF;
-  /* White */
-  --accent1-color: #6DA84D;
-  /* Asparagus */
-  --accent2-color: #FAA40F;
-  /* Orange(web) */
+  --primary-color: #78E2DF; /* Tianny Bleu */
+  --secondary-color: #FFFFFF; /* White */
+  --accent1-color: #6DA84D; /* Asparagus */
+  --accent2-color: #FAA40F; /* Orange(web) */
   --accent3-color: #30760b;
   --heading-font: 'PT Serif', serif;
   --paragraph-font: 'Sedgwick Ave Display', cursive;
 }
+
 * {
   box-sizing: border-box;
 }
+
 img {
   width: 100%
 }
+
 header,
 main,
 footer {
   max-width: 1200px;
   margin: 0 auto;
-  ;
 }
 
 /* Header */
 .grid {
-  /* Added class "grid" */
   display: grid;
-  /* Using CSS Grid */
   grid-template-columns: 150px auto;
-
   align-items: center;
-  /* Align items vertically */
 }
 
 header img {
   max-width: 100%;
-
 }
-
 
 nav {
   display: flex;
-  /* Use Flexbox for navigation links */
   justify-content: space-around;
-  /* Distribute links evenly */
   background-color: var(--accent3-color);
   padding: 2em 0;
 }
@@ -80,7 +70,6 @@ footer {
 
 .sociallinks {
   background: unset;
-  /* Add some space between social links and footer text */
   display: flex;
   justify-content: space-around;
   justify-self: end;
@@ -92,78 +81,57 @@ footer {
 }
 
 .sociallinks a {
-
   margin-left: 10px;
-
   text-decoration: none;
   padding: 0;
   margin: 0 5px;
 }
 
-
 /* About Us hero */
 .hero {
-
   position: relative;
 }
 
 .hero>img {
   width: 100%;
-
 }
 
 .hero h1 {
   position: absolute;
-
   top: 30px;
-
   width: 100%;
-
   text-align: center;
   color: #e3e3e3;
 }
 
 .hero article {
   background-color: rgba(255, 255, 255, .35);
-
   position: absolute;
-
   top: 100px;
-
   left: 50px;
-
   right: 50px;
-
 }
 
 .hero article img {
-
   float: right;
-
   margin: 25px;
-
   width: 200px;
-
 }
 
 .hero article p {
-
   color: #000;
-
   font-size: 18px;
-
   text-align: left;
-  
   padding: 20px;
 }
 
-.map{
+.map {
   border: 0;
 }
 
 .team {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2em;
 }
 
@@ -172,27 +140,24 @@ footer {
   justify-self: center;
 }
 
-
-
 .contact-form {
   max-width: 500px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  /* or use display: grid for grid layout */
 }
 
 .contact {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 1em 0.5em;
+  gap: 1em .5em;
 }
 
 .contact-purpose {
   grid-column: 1/3;
 }
 
-.contact > label {
+.contact>label {
   justify-self: right;
 }
 
@@ -205,6 +170,7 @@ footer {
   background-color: var(--accent2-color);
   color: #3e3e3e;
   border: none;
+  cursor: pointer;
 }
 
 .contact button:active {
@@ -212,6 +178,4 @@ footer {
   background-color: #3e3e3e;
 }
 
-.map {
-  border: 0;
-}
+
